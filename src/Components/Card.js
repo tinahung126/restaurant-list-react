@@ -37,11 +37,11 @@ class Card extends React.Component {
                 alt={restaurant.title}
               />
               <div className='card-body'>
-                <h5 className='card-title'>{restaurant.title}</h5>
+                <h5 className='card-title fw-bold'>{restaurant.title}</h5>
                 <h6 className='card-subtitle my-2 text-truncate'>{restaurant.detail}</h6>
               </div>
               <div className='card-body d-flex justify-content-between align-items-center '>
-                <span>{restaurant.follower} 人在追蹤</span>
+                <span className='text-secondary'>{restaurant.follower} 人在追蹤</span>
                 <button
                   className={`btn dark px-6 ${restaurant.isFollowed ? 'followed' : ''}`} style={{ color: 'white' }} onClick={() => this.handleFollowing(restaurant)}
                 >{restaurant.isFollowed ? '追蹤中' : '追蹤'}
