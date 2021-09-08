@@ -29,7 +29,7 @@ class Card extends React.Component {
     return (
       this.state.restaurants.map((restaurant) => {
         return (
-          <div className='col-xl-3 col-lg-4 col-sm-6 col-12' key={restaurant.id}>
+          <div className='col-xl-3 col-lg-4 col-sm-6 col-12 ' key={restaurant.id}>
             <div className='card mb-3 '>
               <img
                 className='card-img-top'
@@ -38,7 +38,7 @@ class Card extends React.Component {
               />
               <div className='card-body'>
                 <h5 className='card-title'>{restaurant.title}</h5>
-                <h6 className='card-subtitle my-2'>{restaurant.detail}</h6>
+                <h6 className='card-subtitle my-2 text-truncate'>{restaurant.detail}</h6>
               </div>
               <div className='card-body d-flex justify-content-between align-items-center '>
                 <span>{restaurant.follower} 人在追蹤</span>
@@ -51,7 +51,6 @@ class Card extends React.Component {
           </div>
         )
       })
-
     )
   }
 }
