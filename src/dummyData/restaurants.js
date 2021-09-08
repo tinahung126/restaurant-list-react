@@ -1,6 +1,6 @@
 const dummyData = []
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 12; i++) {
   dummyData.push({
     id: i,
     title: '石二鍋',
